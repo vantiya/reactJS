@@ -1,5 +1,19 @@
+// eslint-disable-next-line
+import './ExpenseItem.css';
+
 function ExpenseItem() {
-    return <h2>Expense item!</h2>
+    const expenseDate = new Date(2021, 11, 31);
+    const expenseTitle = "Car Insurance";
+    const expensePrice = 259.9
+    return (
+      <div className="expense-item">
+           <div>{expenseDate.toISOString()}</div>
+            <div className="expense-item__description">
+                 <h2>{expenseTitle}</h2>
+                  <div className="expense-item__price">${expensePrice}</div>
+            </div>
+        </div>
+    );
 }
 
 export default ExpenseItem;
