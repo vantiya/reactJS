@@ -2,6 +2,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
   const expenses = [
@@ -35,6 +36,7 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p> Let's Get Started with Basic Custom Component.</p>
+        <NewExpense />
         <Expenses expenses={expenses} />
       </header>
     </div>
