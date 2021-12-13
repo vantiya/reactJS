@@ -31,12 +31,16 @@ function App() {
       price: 1445.49
     }
   ]
+
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  }
   return (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p> Let's Get Started with Basic Custom Component.</p>
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseHandler} />
         <Expenses expenses={expenses} />
       </header>
     </div>
