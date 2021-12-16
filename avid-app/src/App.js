@@ -29,6 +29,12 @@ const EXPENSES = [
     title: 'Buy myself MacBook Pro 16 Inch',
     date: new Date(2021, 11, 10),
     price: 1445.49
+  },
+  {
+    id: '4',
+    title: 'Get Flutter App course done!',
+    date: new Date(2020, 10, 3),
+    price: 100
   }
 ]
 function App() {
